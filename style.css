@@ -44,10 +44,14 @@ footer{
 
 .column{
     flex-basis: calc(100% / 3);
-    min-height: 300px;
+    /*height: 500px;*/
     border: 1px dashed black;
 }
 
 .card{
+    
+}
 
+img{
+    width: 100%;
 }
