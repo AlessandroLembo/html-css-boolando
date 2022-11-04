@@ -9,8 +9,15 @@
 body{
     font-family: sans-serif;
     padding-top: 80px;
-    padding-bottom: 100px;
+    
 }
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Section */
 
 header{
     background-color: orange;
@@ -30,10 +37,10 @@ header{
 footer{
     background-color: black;
     height: 80px;
-    position: fixed;
+    /*position: fixed;
     width: 100%;
     bottom: 0;
-    left: 0;
+    left: 0;*/
 }
 
 .row{
@@ -49,9 +56,38 @@ footer{
 }
 
 .card{
+    position: relative;
     
 }
 
-img{
-    width: 100%;
+.heart{
+    font-size: 25px;
+    background-color: white;
+    padding: 2px 8px;
+    position:absolute;
+    top: 3px;
+    right: 0;
+
+}
+
+.label{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.discount, .eco{
+    color: white;
+    padding: 4px 6px;
+    font-size: 15px;
+}
+
+.discount{
+    background-color: red;
+    
+}
+
+.eco{
+    background-color: green;
+    
 }
