@@ -25,6 +25,10 @@ body{
     flex-basis: calc(100% / 3);
 }
 
+li, i{
+    padding: 3px;
+}
+
 /* Section */
 
 /* Header */
@@ -36,39 +40,15 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
-    color: white;
 }
 
-.header-container{
-    margin: 0 auto;
+.header-container, .footer-container{
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-a{
-    text-decoration: none;
+    margin: 0 auto;
     color: white;
-}
-
-li{
-    list-style-type: none;
-    display: inline-block;
-}
-
-.logo{
-    max-width: 60%;
-    text-align: center;
-}
-
-.logo img{
-    max-width: 25%;
-
-}
-
-li, i{
-    padding: 3px;
 }
 
 /* Main */
@@ -104,11 +84,35 @@ li, i{
 
 /* footer */
 footer{
-    background-color: red;
+    background-color: black;
     height: 80px;
 }
 
-/* details */
+/*Header and footer details*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.logo{
+    max-width: 60%;
+}
+
+.logo img{
+    max-width: 25%;
+
+}
+
+.footer-icon, .logo{
+    text-align: center;
+}
+
+/* Main details */
 .heart{
     font-size: 25px;
     background-color: white;
