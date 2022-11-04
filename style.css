@@ -11,6 +11,16 @@ body{
     padding-top: 80px;
 }
 
+.row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.column{
+    flex-basis: calc(100% / 3);
+}
+
 img{
     max-width: 100%;
     display: inline-block;
@@ -25,8 +35,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 2;
-    
+    z-index: 1;
 }
 
 .main-container{
@@ -39,22 +48,28 @@ footer{
     height: 80px;
 }
 
-.row{
-    display: flex;
-    gap: 10px;
-    
-}
 
-.column{
-    flex-basis: calc(100% / 3);
-    border: 1px dashed black;
-}
-
+/* Cards */
 .card{
     position: relative;
     cursor: pointer;
 }
 
+.images{
+    position: relative;
+}
+
+.front-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.images:hover .front-image{
+    display: none;
+}
+
+/* details */
 .heart{
     font-size: 25px;
     background-color: white;
@@ -63,7 +78,6 @@ footer{
     top: 3px;
     right: 0;
 }
-
 
 .heart:hover{
     color: red;
@@ -90,17 +104,10 @@ footer{
     background-color: green;
 }
 
-.images{
-    position: relative;
+.price{
+    color: red;
 }
 
-.back-image{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-.images:hover .back-image{
-    display: none;
+.original-price{
+    text-decoration: line-through;
 }
