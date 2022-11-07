@@ -59,27 +59,27 @@ header{
 
 /* Cards */
 .card{
-    position: relative;
+    position: relative; 
     cursor: pointer;
 }
 
-.front-image, .back-image{
+img{
     max-width: 100%;
-    display: inline-block;
 }
-
-.images{
-    position: relative;
+.back-image{
+    display: none;
 }
 
 .front-image{
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
 }
 
-.images:hover .front-image{
+.card:hover .front-image{
     display: none;
+}
+
+.card:hover .back-image{
+    display: block;
 }
 
 /* footer */
@@ -140,7 +140,6 @@ li{
 
 .discount{
     background-color: red;
-    
 }
 
 .eco{
